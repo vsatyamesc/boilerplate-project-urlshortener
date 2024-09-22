@@ -20,7 +20,7 @@ app.get("/", function (req, res) {
 
 const mongoUri = DB_URI;
 mongoose
-  .connect(mongoUri, { useNewUrlParser: true, useUnifiedTopology: true })
+  .connect(mongoUri, { useUnifiedTopology: true })
   .then(() => console.log("Connected to MongoDB"))
   .catch((err) => console.log(err));
 
